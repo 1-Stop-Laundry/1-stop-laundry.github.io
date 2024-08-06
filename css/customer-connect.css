@@ -1,3 +1,43 @@
-body {
-    border-bottom: 1px solid black;
+/* Color overrides */
+
+.nav .nav-link.is-active::before {
+    border-bottom-color: var(--accent--primary-1) !important;
+}
+
+.link {
+    color: var(--accent--primary-1) !important;
+}
+
+.mat-fab.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+    background-color: var(--accent--primary-1) !important;
+}
+
+.mat-checkbox-checked.mat-primary .mat-checkbox-background, .mat-checkbox-indeterminate.mat-primary .mat-checkbox-background {
+    background-color: var(--accent--primary-1) !important;
+}
+
+/* Style overrides */
+
+.container-fluid {
+    padding: 50px 15px 75px;
+}
+
+.nav-list li {
+    padding-left: 0 !important;
+}
+
+.nav-list li.logo,
+.nav-list li:nth-child(2) {
+    display: none;
+}
+
+a:hover,
+.header-nav-link:hover {
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .nav-list {
+        top: 50px !important;
+    }
 }
