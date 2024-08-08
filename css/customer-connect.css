@@ -16,10 +16,22 @@
     background-color: var(--accent--primary-1) !important;
 }
 
+.mat-focused .mat-form-field-label {
+    color: var(--accent--primary-1) !important;
+}
+
 /* Style overrides */
+
 
 .container-fluid {
     padding: 50px 15px 75px;
+    max-width: 1234px !important;
+}
+
+navbar {
+    display: block;
+    max-width: 1234px;
+    margin: 0 auto;
 }
 
 .nav-list li {
@@ -29,6 +41,15 @@
 .nav-list li.logo,
 .nav-list li:nth-child(2) {
     display: none;
+}
+
+.subscription-plan-card {
+    border: var(--accent--primary-1) !important;
+    color: var(--accent--primary-1) !important;
+}
+
+.subscription-plan-card-selected {
+    background: var(--accent--primary-1) !important;
 }
 
 a:hover,
